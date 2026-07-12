@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santuário Eco-RWA | Ativos Reais Ambientais</title>
+    <style>
+        :root {
+            --primary: #1b4332;
+            --secondary: #2d6a4f;
+            --accent: #d4af37;
+            --dark: #081c15;
+            --light: #f4f9f4;
+            --whatsapp: #25D366;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background-color: var(--primary); color: white; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }
+        .logo { font-size: 24px; font-weight: bold; color: var(--light); }
+        .logo span { color: var(--accent); }
+        .hero { background: linear-gradient(rgba(8, 28, 21, 0.85), rgba(8, 28, 21, 0.95)), url('https://unsplash.com') no-repeat center center/cover; color: white; padding: 100px 10%; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; font-weight: 800; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; color: #b7e4c7; }
+        .cta-btn { background-color: var(--accent); color: var(--dark); padding: 15px 40px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: 0.3s; display: inline-block; text-transform: uppercase; letter-spacing: 1px; }
+        .cta-btn:hover { background-color: white; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .section-title { text-align: center; margin: 60px 0 40px; font-size: 36px; color: var(--primary); }
+        .section-title span { border-bottom: 4px solid var(--accent); padding-bottom: 10px; }
+        .tiers-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 0 10%; margin-bottom: 60px; }
+        .tier-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 40px 30px; width: 290px; text-align: center; position: relative; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .tier-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+        .tier-card.premium { border: 2px solid var(--accent); background: linear-gradient(to bottom, #ffffff, #fffdf5); }
+        .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent); color: var(--dark); padding: 5px 15px; font-size: 12px; font-weight: bold; border-radius: 20px; text-transform: uppercase; white-space: nowrap; }
+        .tier-name { font-size: 22px; color: var(--primary); margin-bottom: 15px; font-weight: 700; }
+        .tier-price { font-size: 32px; font-weight: bold; color: var(--dark); margin-bottom: 20px; }
+        .tier-price span { font-size: 16px; color: #666; }
+        .features-list { list-style: none; text-align: left; margin-bottom: 30px; font-size: 14px; flex-grow: 1; }
+        .features-list li { margin-bottom: 12px; position: relative; padding-left: 20px; }
+        .features-list li::before { content: "✓"; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
+        .btn-group { display: flex; flex-direction: column; gap: 10px; }
+        .buy-btn { display: block; text-align: center; padding: 12px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; font-size: 14px; }
+        .btn-email { background-color: var(--primary); color: white; }
+        .btn-email:hover { background-color: var(--dark); }
+        .btn-whats { background-color: var(--whatsapp); color: white; }
+        .btn-whats:hover { background-color: #1ebea5; }
+        .tier-card.premium .btn-email { background-color: var(--accent); color: var(--dark); }
+        .tier-card.premium .btn-email:hover { background-color: var(--primary); color: white; }
+        .psychology-banner { background-color: var(--dark); color: white; padding: 60px 10%; text-align: center; border-top: 4px solid var(--accent); border-bottom: 4px solid var(--accent); }
+        .psychology-banner h2 { font-size: 30px; margin-bottom: 20px; color: var(--accent); }
+        .psychology-banner p { max-width: 900px; margin: 0 auto; font-size: 18px; color: #b7e4c7; }
+        footer { background-color: var(--primary); color: white; text-align: center; padding: 30px; font-size: 14px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SANTUÁRIO<span>RWA</span></div>
+        <div style="color: var(--accent); font-weight: bold;">Fase: Pré-Venda de Fundadores</div>
+    </header>
+
+    <section class="hero">
+        <h1>Preserve a História. Lastreie seu <span>Impacto ESG</span>.</h1>
+        <p>Não compre promessas vazias de plantio. Torne-se proprietário e guardião de árvores nativas maduras de até 100 anos de idade, totalmente geolocalizadas e auditáveis via Blockchain.</p>
+        <a href="#tiers" class="cta-btn">Garantir Meu Voucher de Fundador</a>
+    </section>
+
+    <section class="psychology-banner">
+        <h2>O Poder da Tangibilidade no Mercado de Carbono</h2>
+        <p>Gatilho de Prova Real: Ao contrário dos créditos de carbono abstratos da internet, cada ativo nosso possui um gêmeo digital em Blockchain atrelado a uma árvore física com placa inteligente de QR Code. Você tem o direito contratual e estrito de visitar a sua árvore anualmente.</p>
+    </section>
+
+    <h2 class="section-title" id="tiers"><span>Escolha seu Nível de Legado</span></h2>
+
+    <div class="tiers-container">
+        <!-- TIER IMPERIAL -->
+        <div class="tier-card premium">
+            <div class="badge">Raridade Absoluta (Apenas 10)</div>
+            <div class="tier-name" style="margin-top: 15px;">Tier Imperial</div>
+            <div class="tier-price">$6.000 <span>/ USD</span></div>
+            <ul class="features-list">
+                <li>Árvore Exuberante de ~100 Anos</li>
+                <li>Placa de Bronze Monumental Física</li>
+                <li>Metadados de Carbono Máximo</li>
+                <li>Visita Corporativa VIP (5 diretores)</li>
+                <li>Logotipo no Mapa Satélite Principal</li>
+                <li>Direito a Ensaio Fotográfico Exclusivo</li>
+            </ul>
+            <div class="btn-group">
+                <a href="mailto:borthoscar@://gmail.com" class="buy-btn btn-email">Contatar via E-mail</a>
+                <a href="https://wa.me." target="_blank" class="buy-btn btn-whats">Chamar no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- TIER ANCESTRAL -->
+        <div class="tier-card">
+            <div class="tier-name">Tier Ancestral</div>
+            <div class="tier-price">$2.500 <span>/ USD</span></div>
+            <ul class="features-list">
+                <li>Árvore Gigante de +50 Anos</li>
+                <li>Placa Física de Destaque Gravada</li>
+                <li>Direitos de Carbono Ativos Imidiatos</li>
+                <li>Visita Guiada para até 3 Diretores</li>
+                <li>Inclusão no Mapa Florestal</li>
+                <li>Suporte ESG Corporativo</li>
+            </ul>
+            <div class="btn-group">
+                <a href="mailto:borthoscar@://gmail.com" class="buy-btn btn-email">Contatar via E-mail</a>
+                <a href="https://wa.me." target="_blank" class="buy-btn btn-whats">Chamar no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- TIER GUARDIÃO -->
+        <div class="tier-card">
+            <div class="tier-name">Tier Guardião</div>
+            <div class="tier-price">$299 <span>/ USD</span></div>
+            <ul class="features-list">
+                <li>Árvore Nativa de Médio Porte</li>
+                <li>Placa Física com QR Code no Tronco</li>
+                <li>Rastreamento via GPS Submátrico</li>
+                <li>Visita Anual Pré-Agendada (2 pessoas)</li>
+                <li>Atualização Anual de Biomassa</li>
+                <li>Isenção de Responsabilidade Digital</li>
+            </ul>
+            <div class="btn-group">
+                <a href="mailto:borthoscar@://gmail.com" class="buy-btn btn-email">Contatar via E-mail</a>
+                <a href="https://wa.me." target="_blank" class="buy-btn btn-whats">Chamar no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- TIER SEMENTE -->
+        <div class="tier-card">
+            <div class="tier-name">Tier Semente</div>
+            <div class="tier-price">$49 <span>/ USD</span></div>
+            <ul class="features-list">
+                <li>Árvore Jovem / Muda Nativa</li>
+                <li>Identificação e Placa Digital</li>
+                <li>Potencial de Crescimento de Carbono</li>
+                <li>Visita Anual Guida Individual (1h)</li>
+                <li>Certificado Digital de Impacto</li>
+                <li>Ideal para Pessoa Física</li>
+            </ul>
+            <div class="btn-group">
+                <a href="mailto:borthoscar@://gmail.com" class="buy-btn btn-email">Contatar via E-mail</a>
